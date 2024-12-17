@@ -1,0 +1,214 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main App Container */
+.app {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Video URL Input */
+input[type="text"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  font-size: 18px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 480px;
+  margin: 20px auto;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+/* Video element */
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Caption Overlay */
+.caption-overlay {
+  position: absolute;
+  bottom: 30px; /* Place closer to the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff; /* Pure white text */
+  padding: 8px 16px; /* Comfortable padding */
+  font-size: 18px;
+  font-weight: 600; /* Slightly bolder for better readability */
+  text-align: center; /* Center the text */
+  line-height: 1.4; /* Maintain clean spacing */
+  letter-spacing: 0.5px; /* Slight spacing for text clarity */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Clean text shadow */
+  max-width: 80%; /* Avoid stretching across the screen */
+  word-wrap: break-word; /* Wrap long text */
+  z-index: 10;
+}
+
+
+
+/* CaptionForm Component */
+.caption-form {
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Form Elements */
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #555;
+}
+
+input[type="number"],
+input[type="text"],
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+button[type="submit"]:hover {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff0000;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #ffe6e6;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Captions List Container */
+.caption-list {
+  max-width: 600px; /* Align with CaptionForm */
+  margin: 30px auto; /* More spacing above and below */
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  overflow-y: auto; /* Handles overflow if captions are too many */
+}
+
+.caption-list h2 {
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center; /* Centered header */
+  border-bottom: 2px solid #e0e0e0; /* Underline effect */
+  padding-bottom: 10px;
+}
+
+/* Individual Caption Items */
+.caption-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.caption-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds hover effect */
+  background-color: #fafafa;
+}
+
+.caption-item span {
+  flex: 1;
+  color: #555;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap; /* Prevents wrapping for time intervals */
+}
+
+.caption-item p {
+  flex: 3;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  word-break: break-word;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #d9363e;
+}
+
+
