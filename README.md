@@ -28,7 +28,7 @@ State Management: React useState hooks
 Styling: CSS ------------------------------------------------------------------------------------------
 🔧 Setup Instructions 
 
-Clone the Repository: git clone https://github.com/upendar9999/Video-Caption-App
+Clone the Repository: git clone https://github.com/upendar9999/VideoPlayerwithCaptions
 
 Navigate to the Project Directory: cd video-caption-app
 
