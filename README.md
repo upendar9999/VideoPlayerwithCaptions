@@ -30,20 +30,22 @@ Styling: CSS -------------------------------------------------------------------
 
 Clone the Repository: git clone https://github.com/upendar9999/VideoPlayerwithCaptions
 
-Navigate to the Project Directory: cd video-caption-app
+Navigate to the Project Directory: cd VideoPlayerwithCaptions
 
 Install Dependencies: npm install
 
-Start the Development Server : npm start
+Start the Development Server : npm run dev
 
-View Your App
+View Your App at http://localhost:5173/
 
 ---------------------------------------------------------------------------------------------
 📜 Deployment
 
 Hosted on Netlify 
 
-App Link : https://video-caption-application.netlify.app/ -----------------------------------------------------------------------------------------------
+App Link : https://videoplayerwithcaptions.netlify.app/
+
+-----------------------------------------------------------------------------------------------
 📝 How to Use the App
 
 Enter a video URL to host a video.
